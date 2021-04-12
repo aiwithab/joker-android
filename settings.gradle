@@ -1,0 +1,4 @@
+include ':network'
+include ':api'
+include ':app'
+rootProject.name = "Joker"
