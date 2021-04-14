@@ -2,6 +2,10 @@ package api
 
 import com.aiwithab.network.JokerClient
 import junit.framework.Assert.assertNotNull
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import org.junit.Test
 
 class JokerApiTest {
@@ -11,8 +15,14 @@ class JokerApiTest {
 
     @Test
     fun getRandomJokeTest(){
-        val joke = jokerClient.api.getRandomJoke().execute()
-        assertNotNull(joke.body()?.id)
+
+        CoroutineScope(Dispatchers.IO).launch {
+
+            val joke = jokerClient.api.getRandomJoke()
+
+            assertNotNull(joke.body()?.id)
+        }
+
     }
 
 }

@@ -7,11 +7,11 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class JokerClient {
 
-    val retrofit = Retrofit.Builder()
+    private val retrofit: Retrofit = Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
-    val api = retrofit.create(JokerAPI::class.java)
+    val api: JokerAPI = retrofit.create(JokerAPI::class.java)
 
 }
