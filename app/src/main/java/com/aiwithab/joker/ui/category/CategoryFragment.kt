@@ -1,4 +1,4 @@
-package com.aiwithab.joker.ui.category
+import com.aiwithab.joker.ui.category.CategoryViewModel
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -22,10 +22,6 @@ class CategoryFragment : Fragment() {
         categoryViewModel =
                 ViewModelProvider(this).get(CategoryViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_category, container, false)
-        val textView: TextView = root.findViewById(R.id.text_category)
-        categoryViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
         return root
     }
 }

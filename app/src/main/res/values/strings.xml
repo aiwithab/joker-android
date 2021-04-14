@@ -9,4 +9,7 @@
 
     <string name="menu_home">Home</string>
     <string name="menu_category">Category</string>
+    <string name="general_card_text">General Jokes</string>
+    <string name="programming_card_text">Programming Jokes</string>
+    <string name="knock_knock_card_text">Knock-Knock Jokes</string>
 </resources>

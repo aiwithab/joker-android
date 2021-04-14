@@ -10,4 +10,13 @@ interface JokerAPI {
     @GET("/jokes/random")
     suspend fun getRandomJoke(): JokeModel
 
+    @GET("/jokes/programming/random")
+    suspend fun getProgrammingJoke(): JokeModel
+
+    @GET("/jokes/general/random")
+    suspend fun getGeneralJoke(): JokeModel
+
+    @GET("/jokes/knock-knock/random")
+    suspend fun getKnockKnockJoke(): JokeModel
+
 }
