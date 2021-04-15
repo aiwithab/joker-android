@@ -1,3 +1,4 @@
+include ':database'
 include ':network'
 include ':api'
 include ':app'
