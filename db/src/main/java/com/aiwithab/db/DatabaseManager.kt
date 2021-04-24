@@ -1,10 +1,10 @@
-package com.aiwithab.database
+package com.aiwithab.db
 
 
+import android.content.Context
 import androidx.room.Room
-import com.aiwithab.database.db.JokeDB
+import com.aiwithab.db.db.JokeDB
 
-import javax.naming.Context
 
 class DatabaseManager private constructor(private val db: JokeDB) {
 

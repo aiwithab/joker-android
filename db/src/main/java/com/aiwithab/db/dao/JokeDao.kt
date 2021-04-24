@@ -1,10 +1,10 @@
-package com.aiwithab.database.dao
+package com.aiwithab.db.dao
 
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
-import com.aiwithab.database.entity.JokeEntity
+import com.aiwithab.db.entity.JokeEntity
 
 
 @Dao
