@@ -69,4 +69,10 @@ dependencies {
 
     implementation project(':network')
 
+    //Espresso
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+
+
 }
