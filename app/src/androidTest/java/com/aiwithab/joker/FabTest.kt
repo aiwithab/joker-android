@@ -23,7 +23,7 @@ class FabTest {
 
 
     @Test
-    fun checkFab(){
+    fun check_fab(){
 
         onView(withId(R.id.refreshJokeFab))
             .perform(click())
